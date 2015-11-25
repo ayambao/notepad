@@ -1,5 +1,6 @@
 .wrapper_with_padding
 #note.clearfix
+= cycle('list_line_odd', 'list_line_even')
 - unless @notes.blank?
   %a{href: (url_for [note])}
   .note
