@@ -53297,6 +53297,7 @@ ActionController::RoutingError (No route matches [GET] "/images/welcome_banner.j
   Rendered /home/jet/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (61.3ms)
 
 
+<<<<<<< HEAD
 Started HEAD "/" for 127.0.0.1 at 2015-11-27 23:39:44 +0000
 
 ActiveRecord::PendingMigrationError (
@@ -54137,6 +54138,22 @@ Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/normalize.css" for 93.34.103.185 at 2015-11-27 23:51:34 +0000
+=======
+Started GET "/" for 127.0.0.1 at 2015-11-26 23:39:06 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (14.7ms)
+Completed 200 OK in 456ms (Views: 455.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 23:39:06 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 76ms (Views: 75.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.css" for 127.0.0.1 at 2015-11-26 23:39:07 +0100
+>>>>>>> 7bcb335cc0d3e058a94e74e50c6dba3efc3cbb12
 
 ActionController::RoutingError (No route matches [GET] "/assets/normalize.css"):
   actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -54156,6 +54173,7 @@ ActionController::RoutingError (No route matches [GET] "/assets/normalize.css"):
   rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
   railties (4.2.3) lib/rails/engine.rb:518:in `call'
   railties (4.2.3) lib/rails/application.rb:165:in `call'
+<<<<<<< HEAD
   passenger (5.0.21) src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
   passenger (5.0.21) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
   passenger (5.0.21) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
@@ -54245,6 +54263,24 @@ ActionController::RoutingError (No route matches [GET] "/assets/normalize.css"):
 
 
 Started GET "/images/welcome_banner.jpg" for 93.34.103.185 at 2015-11-27 23:51:40 +0000
+=======
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jet/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/jet/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/jet/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/jet/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /home/jet/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.0ms)
+  Rendered /home/jet/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.2ms)
+  Rendered /home/jet/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /home/jet/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (93.7ms)
+
+
+Started GET "/images/welcome_banner.jpg" for 127.0.0.1 at 2015-11-26 23:39:07 +0100
+>>>>>>> 7bcb335cc0d3e058a94e74e50c6dba3efc3cbb12
 
 ActionController::RoutingError (No route matches [GET] "/images/welcome_banner.jpg"):
   actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -54264,6 +54300,7 @@ ActionController::RoutingError (No route matches [GET] "/images/welcome_banner.j
   rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
   railties (4.2.3) lib/rails/engine.rb:518:in `call'
   railties (4.2.3) lib/rails/application.rb:165:in `call'
+<<<<<<< HEAD
   passenger (5.0.21) src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
   passenger (5.0.21) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
   passenger (5.0.21) src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
@@ -54591,3 +54628,18 @@ ActionController::RoutingError (No route matches [GET] "/assets/normalize.css"):
   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.9ms)
+=======
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jet/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/jet/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/jet/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/jet/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /home/jet/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.1ms)
+  Rendered /home/jet/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.1ms)
+  Rendered /home/jet/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/jet/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (93.9ms)
+>>>>>>> 7bcb335cc0d3e058a94e74e50c6dba3efc3cbb12
