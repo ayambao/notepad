@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem "passenger"
 gem 'rails', '4.2.3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -17,6 +18,3 @@ group :development do
   gem 'sqlite3'
 end
 
-#group :production do
- # gem 'pg'
-#end
